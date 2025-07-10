@@ -1,4 +1,18 @@
-data/ 
-rides_q3.db 
-.ipynb_checkpoints/ 
-anaconda_projects/ 
+# Core ignores
+# DuckDB database + WAL
+rides_*_q*.db
+rides_*_q*.db.wal
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Raw CSV trip data (we read at runtime from your data/ folder)
+data/
+
+# Any Anaconda project files
+anaconda_projects/
+
+# Python bytecode
+__pycache__/
+*.py[cod]
+
